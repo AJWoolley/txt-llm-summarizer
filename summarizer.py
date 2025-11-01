@@ -20,3 +20,22 @@ if __name__ == "__main__":
         print("Usage: python summarizer.py <input_file.txt>")
     else:
         summarize_file(sys.argv[1])
+
+"""
+To enable real LLM summarization:
+
+1. Create an OpenAI account and generate an API key:
+   https://platform.openai.com/account/api-keys
+
+2. Set your key as an environment variable before running:
+   export OPENAI_API_KEY="sk-..."
+
+   (Windows PowerShell equivalent)
+   setx OPENAI_API_KEY "sk-..."
+
+3. Install the OpenAI Python SDK:
+   python3 -m pip install --upgrade openai
+
+The script will automatically use this key via the environment variable.
+"""
+
